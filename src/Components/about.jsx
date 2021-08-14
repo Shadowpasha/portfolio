@@ -17,28 +17,29 @@ background: url(${aboutmejpg}) no-repeat;
 background-size: cover;
 
 
-@media screen and (max-height: 615px) {
+@media screen and (max-height: 650px) {
     height: 110vh;
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 570px) {
     height: 130vh;
 }
 
-@media screen and (max-height: 424px) {
+@media screen and (max-height: 464px) {
     height: 150vh;
 }
 
 @media screen and (max-width: ${devicesizes.mobile}px){
-    height: 200vh;
+    height: 220vh;
 }
 
-@media screen and (max-height: 630px) and (max-width:467px) {
+@media screen and  (max-height: 650px) and (max-width: ${devicesizes.mobile}px) and (min-width: 467px) {
+    height: 280vh;
+}
+
+@media screen and (max-height: 705px) and (max-width:500px) {
     height: 300vh;
 }
-
-
-
 
 `;
 
@@ -100,6 +101,12 @@ margin:0;
 height: 100%;
 width:1px;
 border-right: 2px solid rgba(0,0,0,0.2);
+
+@media screen and (max-width:${devicesizes.mobile}px){
+    width:100%;
+    height: 1px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
 
 `;
 
@@ -228,7 +235,7 @@ export function Aboutsection(){
             </List>
             </Cell>
 
-            {!ismobile && < Seperator/>}
+             < Seperator/>
 
             <Cell >
             <Icon src={Gameicon} />
@@ -248,7 +255,7 @@ export function Aboutsection(){
             </List>
             </Cell>
 
-            {!ismobile && < Seperator/>}
+            < Seperator/>
 
             <Cell >
             <Icon src={Webicon} />
