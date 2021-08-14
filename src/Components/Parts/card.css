@@ -1,0 +1,36 @@
+
+
+.Modal {
+    padding: 3vh;
+    height: 90%;
+    width: 50%;
+    background-color: #ffffff;
+    overflow: auto;  
+  }
+  
+  .Overlay {
+    position: fixed;
+  
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  @media (max-width: 630px) {
+    .Modal {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .Modal {
+      width: 100%;
+    }
+  }

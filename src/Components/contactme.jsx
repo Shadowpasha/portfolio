@@ -44,12 +44,12 @@ color: rgba(255,255,255,1);
 
 const Line = styled.div`
 height: 2px;
-width: 270px;
+width: 400px;
 border-bottom: 1vh solid rgba(255,255,255,1);
 margin: 0;
 
 @media screen and (max-width: ${devicesizes.mobile}px){
-    width: 150px;
+    width: 200px;
 }
 
 `;
@@ -98,7 +98,7 @@ border:transparent;
 }
 
 @media screen and (max-width: ${devicesizes.mobile}px){
-    width: 290px;
+    width: 293px;
 }
 
 `;
